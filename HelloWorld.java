@@ -2,24 +2,7 @@ import java.io.*;
 import java.net.*;
 
 public class HelloWorld {
-    private static final String responseBody = "<!DOCTYPE html>"
-            + "<html>"
-            + "    <head>"
-            + "          <meta http-equiv=Content-type content=\"text/html; charset=us-ascii\">"
-            + "          <title>So it's java</title>"
-            + "    </head>"
-            + "    <body>"
-            + "          <div>"
-            + "              <h1>Hi there <em>OUTSIDE!</em></h1>"
-            + "              This is <em>me</em>:"
-            + "              <reader>"
-            + "              <img src=cool.jpg alt=\"Bild von mir\">"
-            + "          </div>"
-            + "          <div>"
-            + "              and this is my <a href=friends.html>meine Freunde.</a>"
-            + "          </div>"
-            + "    </body>"
-            + "</html>";
+    private static final String responseBody ="<html><body><p><img src=\"cool.jpg\" alt=\"parakeet\"></p></body></html>";
 
     public static void main(String... args) throws IOException {
         int port = Integer.parseInt(args[0]);
