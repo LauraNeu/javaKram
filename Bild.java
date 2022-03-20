@@ -32,7 +32,7 @@ public class Bild {
         @Override
         public void handle(HttpExchange he) throws IOException {
             
-            String response = "Hello from java-buddy";
+            String response = "Hello everybody out there :)";
             he.sendResponseHeaders(responseCode_OK, response.length());
             
             OutputStream outputStream = he.getResponseBody();
@@ -47,7 +47,7 @@ public class Bild {
         public void handle(HttpExchange he) throws IOException {
 
             Headers headers = he.getResponseHeaders();
-            headers.add("Content-Type", "image/jpg");
+            headers.add("Content-Type", "image/jpeg");
             
             File file = new File ("cool.jpg");
             byte[] bytes  = new byte [(int)file.length()];
